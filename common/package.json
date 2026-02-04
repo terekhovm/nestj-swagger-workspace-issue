@@ -1,0 +1,44 @@
+{
+  "name": "@workspace-issue/common",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepare": "nest build",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
+  },
+  "dependencies": {
+    "@nestjs/swagger": "^11.2.6"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.16",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
+    "source-map-support": "^0.5.21",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./sublib": {
+      "import": "./dist/sublib/index.js",
+      "require": "./dist/sublib/index.js",
+      "types": "./dist/sublib/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts"
+}
